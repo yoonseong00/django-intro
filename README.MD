@@ -63,3 +63,19 @@ def index(request):
 ## MTV
 
 ![MTV](./assets/MTV.PNG)
+
+
+
+# django 팁
+
+
+- 이름.html안에서 for문 돌리는 방법
+```
+{% for 데이터 in {돌리고자하는 리스트} %}
+{% endfor %}  <-- endfor을 통해 for문이 끝났다는걸 선언
+
+만약 리스트가 인덱스인데 깔끔하게 보여주고 싶으면
+{% for 데이터 in {돌리고자하는 리스트} %}
+<div class="alert alert-primary">{{데이터}}</div>      <-- 이런식으로 for문 사이에 class 추가
+{% endfor %}  <-- endfor을 통해 for문이 끝났다는걸 선언
+```
